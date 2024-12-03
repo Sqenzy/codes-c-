@@ -16,6 +16,7 @@ while (stop == false)
     Console.ForegroundColor = ConsoleColor.DarkBlue;
     Console.WriteLine("                              list of commands:");
     Console.WriteLine("\n  money (shows current balance)" + "                        play (lets you enter the games)");
+    Console.WriteLine("\n  stop  (stops the program)");
     Console.ResetColor(); 
     
     switch (Console.ReadLine())
@@ -78,7 +79,7 @@ while (stop == false)
                             Thread.Sleep(2000);
                             Console.ForegroundColor = ConsoleColor.Red;
                             Console.Write("       +");
-                            Thread.Sleep(1000);
+                            Thread.Sleep(3000);
                             Console.ForegroundColor = ConsoleColor.Yellow;
                             Console.Write("                   +");
                             Thread.Sleep(4000);
@@ -105,7 +106,7 @@ while (stop == false)
                             Thread.Sleep(2000);
                             Console.ForegroundColor = ConsoleColor.Red;
                             Console.Write("       +");
-                            Thread.Sleep(1000);
+                            Thread.Sleep(3000);
                             Console.ForegroundColor = ConsoleColor.Yellow;
                             Console.Write("                   +");
                             Thread.Sleep(4000);
@@ -113,7 +114,7 @@ while (stop == false)
                             Console.WriteLine("\n_______________________________________________________________");
                             Thread.Sleep(1000);
                             Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine("You LOST");
+                            Console.WriteLine("\n                      You LOST");
                             Console.ResetColor();
                             Thread.Sleep(8000);
                             Console.WriteLine("\n");
@@ -132,6 +133,9 @@ while (stop == false)
                 break;
         }
         break;
+         case "stop":
+             stop = true;
+             break;
         
 }
     
