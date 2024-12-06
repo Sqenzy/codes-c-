@@ -16,7 +16,7 @@ while (stop == false)
     Console.ForegroundColor = ConsoleColor.DarkBlue;
     Console.WriteLine("                              list of commands:");
     Console.WriteLine("\n  money (shows current balance)" + "                        play (lets you enter the games)");
-    Console.WriteLine("\n  stop  (stops the program)");
+    Console.WriteLine("\n  stop  (stops the program)"     + "                            bank (opens the bank)");
     Console.ResetColor(); 
     
     switch (Console.ReadLine())
@@ -135,6 +135,31 @@ while (stop == false)
         break;
          case "stop":
              stop = true;
+             break;
+         case "bank":
+             Console.WriteLine("                              Welcome to BANK");
+             Console.WriteLine("--------------------------------------------------------------------------------");
+             Console.WriteLine("\n");
+             Console.WriteLine("\n");
+             Console.WriteLine("money (shows current acc balance)");
+             switch (Console.ReadLine())
+             {
+                 case "money":
+                    Console.WriteLine("\nyour current balance is: ");
+                    Console.Write(money);
+                    Console.ResetColor();
+                    Thread.Sleep(8000);
+                    Console.WriteLine("\n");
+                    Console.WriteLine("\n");
+                    Console.WriteLine("\n");
+              break;
+                    
+                 
+             }
+             Thread.Sleep(8000);
+             Console.WriteLine("\n");
+             Console.WriteLine("\n");
+             Console.WriteLine("\n");
              break;
         
 }
