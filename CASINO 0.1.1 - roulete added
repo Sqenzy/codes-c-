@@ -45,7 +45,7 @@ while (stop == false)
               switch (Console.ReadLine())
                 {
             case "r":
-                Console.WriteLine("do you want to bet on + or -");
+                Console.WriteLine("do you want to bet on + or /");
                 char choice = ' ';
                 choice = Convert.ToChar(Console.ReadLine());
                 char symbol = ' ';
@@ -118,9 +118,9 @@ while (stop == false)
                             }
                             else if (roll01 == 2)
                             {
-                                 symbol = '-';
+                                 symbol = '/';
                                  Thread.Sleep(5000);
-                                 Console.WriteLine("                            -");
+                                 Console.WriteLine("                            /");
                                  Thread.Sleep(1000);
                                  Console.WriteLine("_______________________________________________________________");
                                  Thread.Sleep(1000);
