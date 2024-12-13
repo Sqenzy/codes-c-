@@ -1,0 +1,72 @@
+using System;
+using System.Collections.Generic;
+using System.Security.Cryptography;
+using System.Threading.Tasks;
+using System.Threading;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Random numberGenerator = new Random();
+        
+        Console.WriteLine("-------welcome to dopamine genrator---------");
+        Console.WriteLine("\n          start (lets you start)");
+        Console.WriteLine("\n------------dopamine genrator-------------");
+        
+        string vstup;
+        vstup = Console.ReadLine();
+        roll01 = numberGenerator.Next(1, 11);
+        int wait = 0;
+        
+        if (vstup == "start")
+        {
+            Console.WriteLine("              you have started");
+            Thread.Sleep(2000);
+            if (roll01 == 1)
+            {
+                wait = 1;
+            }
+            else if (roll01 == 2)
+            {
+                wait = 2;
+            }
+            else if (roll01 == 3)
+            {
+                wait = 3;
+            }
+            else if (roll01 == 4)
+            {
+                wait = 4;
+            }
+            else if (roll01 == 5)
+            {
+                wait = 5;
+            }
+            else if (roll01 == 6)
+            {
+                wait = 6;
+            }
+            else if (roll01 == 7)
+            {
+                wait = 7;
+            }
+            else if (roll01 == 8)
+            {
+                wait = 8;
+            }
+            else if (roll01 == 9)
+            {
+                wait = 9;
+            }
+            else if (roll01 == 10)
+            {
+                wait = 10;
+            }
+            Thread.Sleep(wait);
+            Console.WriteLine(wait);
+        }
+        
+        
+    }
+}
